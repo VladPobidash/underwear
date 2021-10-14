@@ -17,7 +17,7 @@ const Category = () => {
         return k.text
      }
   })
-
+  
   return (
     <>
       <h1>{kkk}</h1>
