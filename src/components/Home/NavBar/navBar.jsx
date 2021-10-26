@@ -13,7 +13,7 @@ import { Tabs, Tab } from "@mui/material";
 const NavBar = () => {
   return (
     <>
-      <AppBar position="fixed" sx={{ boxShadow: "none" }}>
+      <AppBar position="static" sx={{ boxShadow: "none" }}>
         <Toolbar sx={{ background: "white"  }}>
           <Container sx={{ maxWidth: "1300px", margin: "0 auto" }}>
             <Box
@@ -51,16 +51,16 @@ const NavBar = () => {
                   <Tab label="комплекти" to="/kits" component={Link} />
                 </Tabs>
                 <Tabs>
-                  <Tab label="бюзгальтери" to="/kits" component={Link} />
+                  <Tab label="бюзгальтери" to="/bras" component={Link} />
                 </Tabs>
                 <Tabs>
-                  <Tab label="трусики" to="/kits" component={Link} />
+                  <Tab label="трусики" to="/panties" component={Link} />
                 </Tabs>
                 <Tabs>
-                  <Tab label="купальники" to="/kits" component={Link} />
+                  <Tab label="купальники" to="/swimwear" component={Link} />
                 </Tabs>
                 <Tabs>
-                  <Tab label="SALE" to="/kits" component={Link} />
+                  <Tab label="SALE" to="/sale" component={Link} />
                 </Tabs>
               </Box>
               <Box
