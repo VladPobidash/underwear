@@ -13,14 +13,14 @@ const Category = () => {
   ];
 
   const kkk = categoryPath.map((k) => {
-     if (k.path === route.path) {
-        return k.text
-     }
-  })
-  
+    if (k.path === route.path) {
+      return k.text;
+    }
+  });
+
   return (
     <>
-      <h1>{kkk}</h1>
+      <h1 style={{ position: "relative", zIndex: '10' }}>{kkk}</h1>
     </>
   );
 };

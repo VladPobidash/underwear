@@ -1,5 +1,4 @@
 import "../../Home/NavBar/navBar.scss";
-import Logo from "../../assets/img/puma-logo.png";
 import React from "react";
 import { AppBar, Container, Toolbar } from "@mui/material";
 import Box from "@mui/material/Box";
@@ -13,8 +12,8 @@ import { Tabs, Tab } from "@mui/material";
 const NavBar = () => {
   return (
     <>
-      <AppBar position="static" sx={{ boxShadow: "none" }}>
-        <Toolbar sx={{ background: "white"  }}>
+      <AppBar position="relative" sx={{ boxShadow: "none", zIndex: "100" }}>
+        <Toolbar sx={{ background: "white" }}>
           <Container sx={{ maxWidth: "1300px", margin: "0 auto" }}>
             <Box
               sx={{
@@ -26,7 +25,7 @@ const NavBar = () => {
               <Box>
                 <Tabs>
                   <Tab
-                    label={<img className="logo" src={Logo} />}
+                    label={<h1 className="logo">IrwhiteRoom</h1>}
                     to="/"
                     component={Link}
                   />
