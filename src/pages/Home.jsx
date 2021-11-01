@@ -9,9 +9,9 @@ const Home = () => {
   return (
     <div>
       <FirstScreen />
+      <CategoriesCard />
       <Sale />
       <SectionInstagram />
-      <CategoriesCard />
       <Footer />
     </div>
   );
