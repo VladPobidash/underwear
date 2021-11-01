@@ -1,4 +1,5 @@
 import React from "react";
+import CategoriesCard from "../components/Home/CategoriesCard/categoriesCard";
 import FirstScreen from "../components/Home/FirstScreen/FirstScreen";
 import Footer from "../components/Home/Footer/Footer";
 import Sale from "../components/Home/Sale/sale";
@@ -10,6 +11,7 @@ const Home = () => {
       <FirstScreen />
       <Sale />
       <SectionInstagram />
+      <CategoriesCard />
       <Footer />
     </div>
   );
