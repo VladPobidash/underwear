@@ -11,6 +11,8 @@ import Box from "@mui/material/Box";
 import InputLabel from "@mui/material/InputLabel";
 import FormControl from "@mui/material/FormControl";
 import NativeSelect from "@mui/material/NativeSelect";
+import Pagination from "@mui/material/Pagination";
+import Stack from "@mui/material/Stack";
 
 const Category = () => {
   const route = useRouteMatch();
@@ -105,7 +107,7 @@ const Category = () => {
             <Box className="category__sort" sx={{ minWidth: 120 }}>
               <FormControl fullWidth>
                 <InputLabel variant="standard" htmlFor="uncontrolled-native">
-                Сортировать по
+                  Сортировать по
                 </InputLabel>
                 <NativeSelect
                   defaultValue={30}
@@ -147,6 +149,9 @@ const Category = () => {
           </div>
         </div>
       </div>
+      <Stack spacing={2} className="category__pagination">
+        <Pagination count={11} defaultPage={1} siblingCount={0} />
+      </Stack>
       <Footer />
     </section>
   );

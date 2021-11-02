@@ -1,6 +1,7 @@
 .category {
   z-index: 10;
   position: relative;
+  width: 100%;
   &__container {
     display: flex;
     flex-direction: column;
@@ -196,6 +197,10 @@
     font-size: 15px;
     display: block;
     text-align: center;
+  }
+  &__pagination {
+    display: flex;
+    align-items: center;
   }
 }
 
