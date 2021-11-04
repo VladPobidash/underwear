@@ -10,7 +10,7 @@
   height: 800px;
   width: 100%;
   z-index: 10;
-  
+
   &__wrapper {
     max-width: 300px;
     height: 200px;
@@ -37,18 +37,11 @@
   }
 
   &__btn {
-    font-family: "Anton", sans-serif;
-    font-size: 15px;
-    border-color: transparent;
-    background-color: rgb(255, 219, 122);
-    color: grey;
-    border-radius: 7px;
-    font-weight: bold;
-    padding: 5px 10px;
     cursor: pointer;
+    transition: all ease-in-out 1s;
     &:hover {
-      background-color: rgb(255, 162, 119);
-      transition: all ease-in-out 0.5s;
+      background-color: rgb(133, 133, 133);
+      color: #fff;
     }
   }
 }

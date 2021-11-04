@@ -29,13 +29,15 @@ const CategoriesCard = () => {
                   <Tabs>
                     <Tab
                       sx={{
-                        background: "#e8b395",
+                        fontFamily: "Lobster",
+                        fontSize: "15px",
+                        border: "1px solid #000",
                         borderRadius: "10px",
-                        color: "#FFF",
+                        padding: "3px",
                       }}
                       className="categoriesCard__btn"
                       label="Перейти"
-                      to="/asdafssaf"
+                      to="/allCategory"
                       component={Link}
                     />
                   </Tabs>

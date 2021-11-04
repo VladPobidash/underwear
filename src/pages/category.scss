@@ -11,20 +11,17 @@
   &__title {
     font-family: "Lobster", cursive;
     font-size: 40px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
   &__wrapper {
-    margin-bottom: 100px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
   &__left {
     width: 300px;
-    height: 600px;
-    margin-bottom: 600px;
+    max-height: 400px;
   }
   &__wrapper-slider {
     width: 200px;
@@ -73,9 +70,12 @@
       width: 50px;
       height: 50px;
       cursor: pointer;
+      transition: all 1s 0.5ms ease-in-out;
       &:hover {
+        transform: scale(1.5);
         background-color: wheat;
         border-color: white;
+        cursor: pointer;
       }
       a {
         text-decoration: none;
@@ -102,8 +102,10 @@
       height: 50px;
       border-color: transparent;
       cursor: pointer;
+      transition: box-shadow 1s 0.5ms ease-in-out;
       &:hover {
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+        cursor: pointer;
       }
       &:nth-child(1) {
         background-color: #000;
@@ -124,54 +126,47 @@
   }
   &__reset {
     width: 300px;
-
-    &-btn {
-      background-color: rgb(223, 35, 10);
-      border-color: transparent;
-      border-radius: 6px;
-      color: #fff;
-      font-family: "Lobster", cursive;
-      font-size: 20px;
-      cursor: pointer;
-      padding: 10px;
-      margin-left: 25%;
-      &:hover {
-        background-color: whitesmoke;
-        color: black;
-      }
+    display: flex;
+    justify-content: center;
+  }
+  &__reset-btn {
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     }
   }
   &__right {
     width: 100%;
+    position: relative;
   }
   &__sort {
-    margin-bottom: 50px;
-    margin-left: 100px;
+    position: absolute;
+    right: 70px;
+    top: -70px;
     width: 300px;
   }
   .card__bottom {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 50px;
-    margin-top: 20px;
   }
   .card__like {
     color: #000;
+    transition: all 1s ease-in-out;
     &:hover {
-      color: wheat;
+      transform: scale(1.5);
     }
   }
   .card__button {
-    font-family: "Lobster", cursive;
-    font-size: 20px;
-    padding: 5px 10px;
-    border-color: transparent;
-    border-radius: 10px;
     cursor: pointer;
+    transition: all 1s ease-in-out;
     &:hover {
-      background-color: wheat;
-      color: white;
+      background-color: rgb(133, 133, 133);
+      color: #fff;
     }
   }
   &__cards {
@@ -179,13 +174,18 @@
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
     align-items: center;
     justify-items: center;
-    margin-top: 50px;
   }
   &__img {
     width: 400px;
     height: 450px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
   .card__name {
     font-family: "Lobster", cursive;

@@ -14,7 +14,7 @@ const NavBar = () => {
     <>
       <AppBar position="relative" sx={{ boxShadow: "none", zIndex: "100" }}>
         <Toolbar sx={{ background: "white" }}>
-          <Container sx={{ maxWidth: "1300px", margin: "0 auto" }}>
+          <Container sx={{ maxWidth: "1400px", margin: "0 auto" }}>
             <Box
               sx={{
                 display: "flex",
@@ -72,21 +72,21 @@ const NavBar = () => {
                 <Tabs>
                   <Tab
                     label={<PermIdentityIcon />}
-                    to="/asdafssaf"
+                    to="/auth"
                     component={Link}
                   />
                 </Tabs>
                 <Tabs>
                   <Tab
                     label={<FavoriteBorderIcon className="icon" />}
-                    to="/asdafssaf"
+                    to="/favorites"
                     component={Link}
                   />
                 </Tabs>
                 <Tabs>
                   <Tab
                     label={<ShoppingCartIcon />}
-                    to="/asdafssaf"
+                    to="/basket"
                     component={Link}
                   />
                 </Tabs>

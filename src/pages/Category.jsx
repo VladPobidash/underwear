@@ -1,5 +1,5 @@
 import { useRouteMatch } from "react-router";
-import React, { useState } from "react";
+import React from "react";
 import "../pages/category.scss";
 import Nouislider from "nouislider-react";
 import Footer from "../components/Home/Footer/Footer";
@@ -13,6 +13,7 @@ import FormControl from "@mui/material/FormControl";
 import NativeSelect from "@mui/material/NativeSelect";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
 
 const Category = () => {
   const route = useRouteMatch();
@@ -23,6 +24,7 @@ const Category = () => {
     { _id: 3, text: "Трусики", path: "/panties" },
     { _id: 4, text: "Купальники", path: "/swimwear" },
     { _id: 5, text: "SALE", path: "/sale" },
+    { _id: 5, text: "All Category", path: "/allCategory" },
   ];
 
   const kkk = categoryPath.map((k) => {
@@ -100,14 +102,26 @@ const Category = () => {
               </table>
             </div>
             <div className="category__reset">
-              <button className="category__reset-btn">Сбросить все</button>
+              <Stack direction="row" spacing={2}>
+                <Button
+                  className="category__reset-btn"
+                  variant="outlined"
+                  style={{
+                    color: "#000",
+                    borderColor: "#000",
+                    fontFamily: "Lobster",
+                  }}
+                >
+                  Сбросить все
+                </Button>
+              </Stack>
             </div>
           </div>
           <div className="category__right">
             <Box className="category__sort" sx={{ minWidth: 120 }}>
               <FormControl fullWidth>
                 <InputLabel variant="standard" htmlFor="uncontrolled-native">
-                  Сортировать по
+                  Сортировать цену по
                 </InputLabel>
                 <NativeSelect
                   defaultValue={30}
@@ -130,16 +144,30 @@ const Category = () => {
                       alt="category__img"
                       className="category__img"
                     />
-                    <p className="card__name">{card.name}</p>
-                    <span className="card__price">{card.price}</span>
                     <div className="card__bottom">
+                      <p className="card__name">{card.name}</p>
+                      <span className="card__price">{card.price}</span>
                       <Tabs>
                         <Tab
                           label={<FavoriteBorderIcon className="card__like" />}
                           to="/asdafssaf"
                           component={Link}
                         />
-                        <button className="card__button">Купить</button>
+                      </Tabs>
+                      <Tabs>
+                        <Tab
+                          sx={{
+                            fontFamily: "Lobster",
+                            fontSize: "15px",
+                            border: "1px solid #000",
+                            borderRadius: "10px",
+                            padding: "3px",
+                          }}
+                          className="card__button"
+                          label="Перейти"
+                          to="/asdafssaf"
+                          component={Link}
+                        />
                       </Tabs>
                     </div>
                   </div>

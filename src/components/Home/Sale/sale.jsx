@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Tabs, Tab } from "@mui/material";
-import SearchIcon from "@mui/icons-material/Search";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import "../Sale/sale.scss";
 import CardSale1 from "../../assets/card-sale-1.jpg";
@@ -30,14 +29,22 @@ const Sale = () => {
                       <span className="sale__price">{card.price}</span>
                     </div>
                     <div className="sale__right">
-                      <Tabs>
-                        <Tab
-                          label={<SearchIcon />}
-                          to="/asdafssaf"
-                          component={Link}
-                        />
-                      </Tabs>
-                      <Tabs>
+                    <Tabs>
+                    <Tab
+                      sx={{
+                        fontFamily: "Lobster",
+                        fontSize: "15px",
+                        border: "1px solid #000",
+                        borderRadius: "10px",
+                        padding: "3px",
+                      }}
+                      className="categoriesCard__btn"
+                      label="Перейти"
+                      to="/allCategory"
+                      component={Link}
+                    />
+                  </Tabs>
+                  <Tabs>
                         <Tab
                           label={<FavoriteBorderIcon className="icon" />}
                           to="/asdafssaf"
