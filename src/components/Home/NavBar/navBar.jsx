@@ -42,7 +42,7 @@ const NavBar = () => {
               <Box
                 sx={{
                   display: "flex",
-                  width: "500px",
+                  width: "100%",
                   justifyContent: "space-around",
                 }}
               >
