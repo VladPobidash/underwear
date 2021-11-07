@@ -6,6 +6,7 @@ import Category from "./pages/Category";
 import Auth from "./pages/Auth";
 import Favorites from "./pages/Favorites";
 import Basket from "./pages/Basket";
+import Card from "./pages/Card";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/swimwear" component={Category} />
         <Route path="/sale" component={Category} />
         <Route path="/allCategory" component={Category} />
+        <Route path="/card" component={Card} />
         <Route path="/auth" component={Auth} />
         <Route path="/favorites" component={Favorites} />
         <Route path="/basket" component={Basket} />

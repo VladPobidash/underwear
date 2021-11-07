@@ -165,7 +165,7 @@ const Category = () => {
                           }}
                           className="card__button"
                           label="Перейти"
-                          to="/asdafssaf"
+                          to="/card"
                           component={Link}
                         />
                       </Tabs>

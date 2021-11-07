@@ -1,0 +1,144 @@
+.card {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    height: 700px;
+    margin-bottom: 40px;
+  }
+  &__left {
+    width: 50%;
+  }
+
+  &__right {
+    width: 50%;
+  }
+  .right__pretitle {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    .pretitle {
+      display: inline-block;
+      font-size: 18px;
+      color: grey;
+      margin-right: 50px;
+      .bold {
+        color: black;
+      }
+    }
+  }
+  .right__title {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    .title {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 20px;
+    }
+  }
+  .right__rating {
+    margin-bottom: 30px;
+  }
+  .size__name {
+    color: grey;
+    font-family: "Josefin Sans", sans-serif;
+    margin-bottom: 15px;
+  }
+
+  .size__chart {
+    margin-bottom: 30px;
+    .size {
+      margin-right: 20px;
+      border: 1px solid black;
+      width: 50px;
+      height: 40px;
+      text-align: center;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        border-color: transparent;
+        background: wheat;
+        transform: scale(1.1);
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .right__price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+
+  .buy__button {
+    margin-bottom: 50px;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      background: rgb(156, 32, 32);
+    }
+  }
+
+  .bonuses {
+    &__item {
+      margin-bottom: 10px;
+      color: grey;
+      padding-left: 25px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url(../components/assets/Check.svg);
+        width: 16px;
+        height: 12px;
+        top: 5px;
+        left: 0px;
+      }
+    }
+  }
+
+  &__haracteristic {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-end;
+    &-left {
+      width: 545px;
+    }
+    &-title {
+      font-size: 24px;
+      color: grey;
+      margin-bottom: 20px;
+    }
+    &-text {
+      height: 40px;
+      color: grey;
+    }
+    &-right {
+      width: 300px;
+    }
+    &-button {
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+input[type="radio"] {
+  display: none;
+}
+.star {
+  cursor: pointer;
+  transition: color 200ms;
+}

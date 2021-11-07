@@ -12,9 +12,12 @@ import { Tabs, Tab } from "@mui/material";
 const NavBar = () => {
   return (
     <>
-      <AppBar position="relative" sx={{ boxShadow: "none", zIndex: "100" }}>
+      <AppBar
+        position="relative"
+        sx={{ boxShadow: "none", zIndex: "100", maxWidth: "1400px" }}
+      >
         <Toolbar sx={{ background: "white" }}>
-          <Container sx={{ maxWidth: "1400px", margin: "0 auto" }}>
+          <Container className="mui-container" sx={{ maxWidth: "1400px", margin: "0 auto" }}>
             <Box
               sx={{
                 display: "flex",
@@ -42,7 +45,7 @@ const NavBar = () => {
               <Box
                 sx={{
                   display: "flex",
-                  width: "500px",
+                  width: "600px",
                   justifyContent: "space-around",
                 }}
               >
