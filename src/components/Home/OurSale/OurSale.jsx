@@ -5,7 +5,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import CardSale1 from "../../../assets/card-sale-1.jpg";
 import CardSale2 from "../../../assets/card-sale-2.jpg";
 import CardSale3 from "../../../assets/card-sale-3.jpg";
-import "../Sale/sale.scss";
+import "./sale.scss";
 
 const Sale = () => {
   const saleCardStorage = [
