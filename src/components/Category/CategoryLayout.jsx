@@ -10,6 +10,7 @@ import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import CategoryCard from "./CategoryCard";
+import ComplectPhoto from "../../assets/card-sale-3.jpg";
 import "./category.scss";
 
 const CategoryLayout = () => {
@@ -27,10 +28,10 @@ const CategoryLayout = () => {
   const currentCategory = categoryPath.find((k) => k.path === route.path);
 
   const cardStorage = [
-    { id: 1, photo: "", name: "Braziliano", price: "300 грн" },
-    { id: 2, photo: "", name: "Chilintano", price: "400 грн" },
-    { id: 3, photo: "", name: "Maximiliano", price: "500 грн" },
-    { id: 4, photo: "", name: "Djekichano", price: "600 грн" },
+    { id: 1, photo: ComplectPhoto, name: "Braziliano", price: "300 грн" },
+    { id: 2, photo: ComplectPhoto, name: "Chilintano", price: "400 грн" },
+    { id: 3, photo: ComplectPhoto, name: "Maximiliano", price: "500 грн" },
+    { id: 4, photo: ComplectPhoto, name: "Djekichano", price: "600 грн" },
   ];
 
   return (
