@@ -1,9 +1,8 @@
 import React from "react";
-import CategoriesCard from "../components/Home/CategoriesCard/categoriesCard";
+import CategoriesCard from "../components/Home/CategoriesCard/CategoriesCard";
 import FirstScreen from "../components/Home/FirstScreen/FirstScreen";
-import Footer from "../components/Home/Footer/Footer";
-import Sale from "../components/Home/Sale/sale";
-import SectionInstagram from "../components/Home/SectionInstagram/sectionInstagram";
+import Sale from "../components/Home/Sale/Sale";
+import Instagram from "../components/Home/Instagram/Instagram";
 
 const Home = () => {
   return (
@@ -11,8 +10,7 @@ const Home = () => {
       <FirstScreen />
       <CategoriesCard />
       <Sale />
-      <SectionInstagram />
-      <Footer />
+      <Instagram />
     </div>
   );
 };

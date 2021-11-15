@@ -1,8 +1,8 @@
 import React from "react";
-import "../CategoriesCard/categoriesCard.scss";
 import { Link } from "react-router-dom";
 import { Tabs, Tab } from "@mui/material";
-import CardSale1 from "../../assets/card-sale-1.jpg";
+import CardSale1 from "../../../assets/card-sale-1.jpg";
+import "./categoriesCard.scss";
 
 const CategoriesCard = () => {
   const CategoriesCardStorage = [
@@ -37,7 +37,7 @@ const CategoriesCard = () => {
                       }}
                       className="categoriesCard__btn"
                       label="Перейти"
-                      to="/allCategory"
+                      to="/allCategories"
                       component={Link}
                     />
                   </Tabs>
