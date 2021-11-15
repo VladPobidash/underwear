@@ -1,5 +1,5 @@
 import React from "react";
-import "../FirstScreen/firstScreen.scss";
+import "./firstScreen.scss";
 import { Link } from "react-router-dom";
 import { Tabs, Tab } from "@mui/material";
 
@@ -21,7 +21,7 @@ const FirstScreen = () => {
               }}
               className="firstScreen__btn"
               label="Перейти к покупкам"
-              to="/allCategory"
+              to="/allCategories"
               component={Link}
             />
           </Tabs>

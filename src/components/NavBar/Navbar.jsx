@@ -1,20 +1,26 @@
-import "../../Home/NavBar/navBar.scss";
 import React from "react";
+import { Link } from "react-router-dom";
+import { Tabs, Tab } from "@mui/material";
 import { AppBar, Container, Toolbar } from "@mui/material";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import { Link } from "react-router-dom";
-import { Tabs, Tab } from "@mui/material";
+import "./navBar.scss";
 
-const NavBar = () => {
+const Navbar = () => {
   return (
     <>
-      <AppBar position="relative" sx={{ boxShadow: "none", zIndex: "100" }}>
+      <AppBar
+        position="relative"
+        sx={{ boxShadow: "none", zIndex: "100", maxWidth: "1400px" }}
+      >
         <Toolbar sx={{ background: "white" }}>
-          <Container sx={{ maxWidth: "1400px", margin: "0 auto" }}>
+          <Container
+            className="mui-container"
+            sx={{ maxWidth: "1400px", margin: "0 auto" }}
+          >
             <Box
               sx={{
                 display: "flex",
@@ -42,7 +48,7 @@ const NavBar = () => {
               <Box
                 sx={{
                   display: "flex",
-                  width: "500px",
+                  width: "600px",
                   justifyContent: "space-around",
                 }}
               >
@@ -99,4 +105,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;
