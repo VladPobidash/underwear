@@ -46,81 +46,76 @@
     font-family: "Lobster", cursive;
     font-size: 20px;
   }
-  &__filter-table {
+  &__filter-fits {
     width: 200px;
     height: 150px;
     margin: 30px auto;
-  }
-  &__color-table {
-    width: 200px;
-    height: 100px;
-    margin: 30px auto;
-  }
-  .table {
-    width: 100%;
-    margin: 0 auto;
-    tr {
-      display: flex;
-      justify-content: space-between;
-    }
-    th {
-      margin: 10px;
-      border: 1px solid #000;
-      padding: 10px;
-      width: 50px;
-      height: 50px;
-      cursor: pointer;
-      transition: all 1s 0.5ms ease-in-out;
-      &:hover {
-        transform: scale(1.5);
-        background-color: wheat;
-        border-color: white;
-        cursor: pointer;
+
+    table {
+      width: 100%;
+      margin: 0 auto;
+
+      tr {
+        display: flex;
+        justify-content: space-between;
       }
-      a {
-        text-decoration: none;
-        color: #000;
+
+      td {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        border: 1px solid #000;
+        padding: 10px;
+        width: 50px;
+        height: 50px;
         cursor: pointer;
+        color: #000;
+        transition: all 0.5s ease-in-out;
         &:hover {
+          transform: scale(1.5);
+          background-color: wheat;
+          border-color: white;
+          cursor: pointer;
           color: white;
         }
       }
     }
   }
+
+  &__color-table {
+    width: 200px;
+    height: 100px;
+    margin: 30px auto;
+  }
+
   .table__color {
     width: 100%;
     margin: 0 auto;
+
+    &-black {
+      background-color: #000;
+    }
+    &-wheat {
+      background-color: wheat;
+    }
+    &-red {
+      background-color: red;
+    }
     tr {
       display: flex;
       justify-content: space-between;
     }
-    th {
+    td {
       margin: 10px;
-      border: 1px solid #000;
       padding: 10px;
       width: 50px;
       height: 50px;
-      border-color: transparent;
       cursor: pointer;
-      transition: box-shadow 1s 0.5ms ease-in-out;
+      transition: box-shadow 0.5s ease-in-out;
+
       &:hover {
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
-        cursor: pointer;
-      }
-      &:nth-child(1) {
-        background-color: #000;
-      }
-      &:nth-child(2) {
-        background-color: wheat;
-      }
-      &:nth-child(3) {
-        background-color: red;
-      }
-      a {
-        text-decoration: none;
-        color: #000;
-        cursor: pointer;
-        opacity: 0;
       }
     }
   }
@@ -131,7 +126,7 @@
   }
   &__reset-btn {
     cursor: pointer;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
     &:hover {
       transform: scale(1.1);
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
@@ -156,17 +151,17 @@
   }
   .card__like {
     color: #000;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
     &:hover {
       transform: scale(1.5);
     }
   }
   .card__button {
     cursor: pointer;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
     &:hover {
-      background-color: rgb(133, 133, 133);
-      color: #fff;
+      background-color: #fff;
+      color: #000;
     }
   }
   &__cards {
@@ -182,7 +177,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin-bottom: 50px;
     cursor: pointer;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
     &:hover {
       transform: scale(1.1);
     }
