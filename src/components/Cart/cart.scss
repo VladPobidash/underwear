@@ -1,0 +1,127 @@
+.cart {
+  &__title {
+    color: #444b58;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 40px;
+  }
+
+  &__items {
+    border: 1px solid #b2b5bb;
+    margin-bottom: 50px;
+
+    &-top {
+      .items__order {
+        font-size: 16px;
+        line-height: 16px;
+        color: #b2b5bb;
+        padding: 30px 0px 20px 30px;
+
+        &-span {
+          color: #444b58;
+          font-weight: bold;
+        }
+      }
+
+      .total__price {
+        font-size: 16px;
+        line-height: 16px;
+        color: #b2b5bb;
+        padding: 0px 0px 50px 30px;
+
+        &-span {
+          color: #444b58;
+          font-weight: bold;
+        }
+      }
+    }
+    &-bottom {
+      .card__product {
+        overflow-y: scroll;
+        height: 100px;
+        &-item {
+          display: flex;
+        }
+
+        &-img {
+          margin: 0px 10px 49px 30px;
+          border-radius: 2px;
+        }
+        &-text {
+          .name {
+            font-size: 14px;
+            line-height: 14px;
+            color: #444b58;
+            margin-bottom: 10px;
+            margin-right: 50px;
+          }
+
+          .price {
+            font-size: 16px;
+            line-height: 16px;
+            color: #444b58;
+            font-weight: bold;
+          }
+        }
+
+        &-button {
+          &-top {
+            width: 120px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .add {
+              border: none;
+              background: none;
+              cursor: pointer;
+              font-size: 30px;
+              font-weight: bold;
+            }
+
+            .amount {
+              color: #444b58;
+              font-size: 20px;
+            }
+
+            .remove {
+              border: none;
+              background: none;
+              cursor: pointer;
+              font-size: 30px;
+              font-weight: bold;
+            }
+          }
+          &-bottom {
+            .delete {
+              border: none;
+              background: none;
+              cursor: pointer;
+              font-size: 14px;
+              line-height: 14px;
+              color: #b2b5bb;
+              margin-left: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__form-button {
+    font-size: 16px;
+    line-height: 16px;
+    color: #ffffff;
+    padding: 22px 47px;
+    border: none;
+    background: #000;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      background: #fff;
+      color: #000;
+      border: 1px solid black;
+    }
+  }
+}

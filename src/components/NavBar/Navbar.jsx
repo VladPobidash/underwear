@@ -7,9 +7,12 @@ import TextField from "@mui/material/TextField";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import IconButton from '@mui/material/IconButton';
+import { useCartModal } from "../Cart/useCartModal";
 import "./navBar.scss";
 
 const Navbar = () => {
+  const { handleOpen } = useCartModal();
   return (
     <>
       <AppBar
@@ -89,13 +92,9 @@ const Navbar = () => {
                     component={Link}
                   />
                 </Tabs>
-                <Tabs>
-                  <Tab
-                    label={<ShoppingCartIcon />}
-                    to="/basket"
-                    component={Link}
-                  />
-                </Tabs>
+                <IconButton onClick={handleOpen}>
+                  <ShoppingCartIcon />
+                </IconButton>
               </Box>
             </Box>
           </Container>
