@@ -1,0 +1,58 @@
+.our_categories {
+  margin-top: 100px;
+  height: 600px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-family: "Lobster", cursive;
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30px;
+  }
+  &__img {
+    width: 270px;
+    height: 370px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all ease-in-out 1s;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__text {
+    font-family: "Lobster", cursive;
+    font-size: 20px;
+  }
+  &__btn {
+    cursor: pointer;
+    transition: all ease-in-out 1s;
+    &:hover {
+      background-color: rgb(133, 133, 133);
+      color: #fff;
+    }
+  }
+}

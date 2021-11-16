@@ -1,21 +1,29 @@
-import "../../Home/NavBar/navBar.scss";
-import Logo from "../../assets/img/puma-logo.png";
 import React from "react";
+import { Link } from "react-router-dom";
+import { Tabs, Tab } from "@mui/material";
 import { AppBar, Container, Toolbar } from "@mui/material";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import { Link } from "react-router-dom";
-import { Tabs, Tab } from "@mui/material";
+import IconButton from '@mui/material/IconButton';
+import { useCartModal } from "../Cart/useCartModal";
+import "./navBar.scss";
 
-const NavBar = () => {
+const Navbar = () => {
+  const { handleOpen } = useCartModal();
   return (
     <>
-      <AppBar position="static" sx={{ boxShadow: "none" }}>
-        <Toolbar sx={{ background: "white"  }}>
-          <Container sx={{ maxWidth: "1300px", margin: "0 auto" }}>
+      <AppBar
+        position="relative"
+        sx={{ boxShadow: "none", zIndex: "100", maxWidth: "1400px" }}
+      >
+        <Toolbar sx={{ background: "white" }}>
+          <Container
+            className="mui-container"
+            sx={{ maxWidth: "1400px", margin: "0 auto" }}
+          >
             <Box
               sx={{
                 display: "flex",
@@ -26,7 +34,7 @@ const NavBar = () => {
               <Box>
                 <Tabs>
                   <Tab
-                    label={<img className="logo" src={Logo} />}
+                    label={<h1 className="logo">IrwhiteRoom</h1>}
                     to="/"
                     component={Link}
                   />
@@ -43,7 +51,7 @@ const NavBar = () => {
               <Box
                 sx={{
                   display: "flex",
-                  width: "500px",
+                  width: "600px",
                   justifyContent: "space-around",
                 }}
               >
@@ -73,24 +81,20 @@ const NavBar = () => {
                 <Tabs>
                   <Tab
                     label={<PermIdentityIcon />}
-                    to="/asdafssaf"
+                    to="/auth"
                     component={Link}
                   />
                 </Tabs>
                 <Tabs>
                   <Tab
                     label={<FavoriteBorderIcon className="icon" />}
-                    to="/asdafssaf"
+                    to="/favorites"
                     component={Link}
                   />
                 </Tabs>
-                <Tabs>
-                  <Tab
-                    label={<ShoppingCartIcon />}
-                    to="/asdafssaf"
-                    component={Link}
-                  />
-                </Tabs>
+                <IconButton onClick={handleOpen}>
+                  <ShoppingCartIcon />
+                </IconButton>
               </Box>
             </Box>
           </Container>
@@ -100,4 +104,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;

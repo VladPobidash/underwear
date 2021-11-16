@@ -1,0 +1,70 @@
+.footer {
+  p {
+    color: white;
+  }
+  margin-top: 100px;
+  border-top: 1px solid rgb(179, 179, 179);
+  background-color: #000;
+
+  &__flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+  }
+  &__customer {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &-title {
+      font-size: 20px;
+    }
+  }
+  &__newsletter-text {
+    font-size: 20px;
+  }
+  &__newsletter-form {
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+  &__company {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &-text {
+      font-size: 20px;
+    }
+  }
+  &__newsletter {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &-input {
+      border-color: transparent;
+      border-radius: 10px;
+    }
+    &-btn {
+      border-color: transparent;
+      border-radius: 7px;
+      font-weight: normal;
+      padding: 5px 10px;
+      background-color: rgb(255, 219, 122);
+      cursor: pointer;
+      font-family: "Anton", sans-serif;
+      font-size: 15px;
+      &:hover {
+        background-color: rgb(255, 162, 119);
+        transition: all ease-in-out 0.5s;
+      }
+    }
+  }
+}
