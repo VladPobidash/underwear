@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Category from "./pages/Category";
 import Product from "./pages/Product";
 import Auth from "./pages/Auth";
+import Cart from "./components/Cart/Cart";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/auth" component={Auth} />
       </Switch>
       <Footer />
+      <Cart />
     </BrowserRouter>
   );
 }
